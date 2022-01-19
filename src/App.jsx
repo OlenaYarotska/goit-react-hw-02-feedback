@@ -23,8 +23,8 @@ class App extends React.Component {
   };
 
   countTotalFeedback = () => {
-    const totalFeedback = this.state.good + this.state.bad + this.state.neutral;
-    return totalFeedback;
+    const { good, bad, neutral } = this.state;
+    return good + bad + neutral;
   };
 
   countPositiveFeedbackPercentage = () => {
